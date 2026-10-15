@@ -53,11 +53,7 @@ dialog{border:0;padding:0;color:var(--ink);background:var(--cream);max-height:94
 .has-video-header #flying-logo img{filter:brightness(0) invert(1);transition:filter .35s ease}
 .has-video-header.video-header-docked #flying-logo img{filter:none}
 
-.real-products .product-image img{width:100%;height:100%;object-fit:cover;object-position:center}
-
-/* Local product-section refinements. */
-.products.container.real-products{background:#e4f2fa;padding-top:64px;padding-bottom:64px}
-.real-products .product-card h3{font-size:18px;line-height:1.35;letter-spacing:-.015em;font-weight:500}
-@media(max-width:700px){.products.container.real-products{padding-top:36px;padding-bottom:36px}.real-products .product-card h3{font-size:15px;line-height:1.35}}
-
 .industry-visual img{object-fit:cover;object-position:center center}
+
+.products .product-image img{object-fit:cover;object-position:center center}
+.products .product-image svg{object-position:center center}
