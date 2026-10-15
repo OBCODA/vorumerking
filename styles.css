@@ -53,16 +53,11 @@ dialog{border:0;padding:0;color:var(--ink);background:var(--cream);max-height:94
 .has-video-header #flying-logo img{filter:brightness(0) invert(1);transition:filter .35s ease}
 .has-video-header.video-header-docked #flying-logo img{filter:none}
 
-/* Product catalogue inspired by the supplied reference. */
-.bottle-products{background:var(--blue);color:#fff;padding-block:60px 48px;margin-bottom:0}
-.catalogue-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:repeat(3,clamp(150px,16vw,245px));gap:16px}
-.catalogue-intro{grid-column:1/3;grid-row:1;align-self:center;padding-right:25px}
-.catalogue-intro h2{font-size:clamp(42px,5vw,66px);line-height:1;margin-bottom:20px;letter-spacing:-.045em}
-.catalogue-intro p{font-size:13px;line-height:1.55;max-width:390px}
-.catalogue-tile{display:block;position:relative;overflow:hidden;background:#202020;border-radius:7px;min-width:0}
-.catalogue-tile img{width:100%;height:100%;object-fit:contain;transition:transform .4s ease}
-.catalogue-tile:hover img,.catalogue-tile:focus-visible img{transform:scale(1.045)}
-.catalogue-tile span{position:absolute;bottom:0;left:0;right:0;padding:22px 14px 12px;font-size:11px;line-height:1.35;background:linear-gradient(transparent,rgba(9,43,64,.88));color:#fff}
-.tile-1{grid-column:1/4;grid-row:2/4}.tile-2{grid-column:3;grid-row:1}.tile-3{grid-column:4;grid-row:1}.tile-4{grid-column:5;grid-row:1}.tile-5{grid-column:4;grid-row:2}.tile-6{grid-column:5;grid-row:2}.tile-7{grid-column:4/6;grid-row:3}
-.catalogue-more{text-align:center;margin-top:32px}.catalogue-more a{display:inline-block;font-size:13px;font-weight:600;padding:0 0 8px;border-bottom:1px solid currentColor}
-@media(max-width:700px){.bottle-products{padding-block:42px 36px}.catalogue-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto;gap:12px}.catalogue-intro{grid-column:1/-1;grid-row:auto;padding:0 0 16px}.catalogue-intro h2{font-size:48px}.catalogue-intro p{font-size:12px}.catalogue-tile{grid-column:auto;grid-row:auto;aspect-ratio:1}.catalogue-tile.tile-1{grid-column:1/-1;aspect-ratio:1.5}.catalogue-tile span{font-size:10px}}
+.real-products .product-image img{width:100%;height:100%;object-fit:cover;object-position:center}
+
+/* Local product-section refinements. */
+.products.container.real-products{background:#e4f2fa;padding-top:64px;padding-bottom:64px}
+.real-products .product-card h3{font-size:18px;line-height:1.35;letter-spacing:-.015em;font-weight:500}
+@media(max-width:700px){.products.container.real-products{padding-top:36px;padding-bottom:36px}.real-products .product-card h3{font-size:15px;line-height:1.35}}
+
+.industry-visual img{object-fit:cover;object-position:center center}
